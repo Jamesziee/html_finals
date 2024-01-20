@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+.background {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(images/white.png);
+    background-position: center;
+    background-size: cover;
+    padding: 15px 5%;
+    overflow: hidden;
+}
+
+nav {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: x-large;
+    padding-left: 2.5%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+    transition: color 0.3s ease;
+    margin-left: 200px;
+    
+}
+nav ul li a:hover,
+.about:hover,
+.contact:hover {
+    color: #3498db; 
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    margin: 15px;
+}
+.about {
+    text-decoration: none;
+    color: black;
+}
+
+.contact {
+    text-decoration: none;
+    color: black;
+    margin-left: .3in;
+}
+.background {
+    position: relative;
+}
+.day-mode {
+    background-image: url(images/white.png);
+    color: rgb(255, 255, 255);
+}
+
+.night-mode {
+    background-image: url(images/black.png);
+    color: rgb(255, 231, 231);
+}
+
+#dayNightButton {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#dayNightButton:hover {
+    background-color: #000000;
+}
+.day-mode #dayNightButton {
+    background-color: #000000;
+    color: #000000;
+}
+.night-mode #dayNightButton {
+    background-color: #000000;
+    color: #ffffff;
+}
+.container{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 200px;
+}
+.card {
+    background-color: rgba(14, 220, 239, 0);
+    width: 350px;
+    height: 450px;
+    margin: 10px;
+    border-radius: 15px;
+    border: 2px solid #000000;
+    text-align: center;
+    
+}
+
+.card-image{
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+    
+}
+.pic1{
+    background-image: url(images/car.png);   
+}
+.pic2{
+    background-image: url(images/poster.png);   
+}
+.pic3{
+    background-image: url(images/magazine.png);   
+}
+.card h2 {
+    margin: 0;
+}
+.card p{
+    padding: 10px 20px;
+}
+.card a {
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 80px 40px;
+    text-decoration: none;
+}
+.card:hover{
+    background-color: rgb(62,62,62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
+@media only screen and (max-width: 768px) {
+    nav {
+        font-size: large;
+        padding: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 10px;
+        margin-left: 0;
+    }
+
+    .container {
+        margin-top: 100px;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .card-image {
+        height: 150px;
+    }
+
+    .card p {
+        padding: 10px;
+    }
+
+    .card a {
+        margin: 20px 0;
+    }
+}

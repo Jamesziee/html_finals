@@ -1,0 +1,121 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+    text-align: center;
+}
+.background {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(images/white.png);
+    background-position: center;
+    background-size: cover;
+    padding: 15px 5%;
+    overflow: hidden;
+}
+
+nav {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: x-large;
+    padding-left: 2.5%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+    transition: color 0.3s ease;
+    margin-left: 200px;
+    
+}
+nav ul li a:hover,
+.about:hover,
+.contact:hover {
+    color: #3498db; 
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    margin: 15px;
+}
+.about {
+    text-decoration: none;
+    color: black;
+}
+
+.contact {
+    text-decoration: none;
+    color: black;
+    margin-left: .3in;
+}
+.background {
+    position: relative;
+}
+.day-mode {
+    background-image: url(images/white.png);
+    color: rgb(255, 255, 255);
+}
+
+.night-mode {
+    background-image: url(images/black.png);
+    color: rgb(255, 231, 231);
+}
+
+#dayNightButton {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#dayNightButton:hover {
+    background-color: #000000;
+}
+.day-mode #dayNightButton {
+    background-color: #000000;
+    color: #000000;
+}
+.night-mode #dayNightButton {
+    background-color: #000000;
+    color: #ffffff;
+}
+.hero {
+    width: 80%;
+    margin: auto;
+    padding: 30px 0px;
+}
+article h1{
+    font-size: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+img{
+    margin: auto;
+    display: block;
+    margin-top: 40px;
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    border: 3px solid #3498db;
+}
+content{
+    font-size: 17px;
+    line-height: 1.5;
+}
+article h5{
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 30px;
+
+}
